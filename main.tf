@@ -3,7 +3,6 @@
 locals {
   vpc_id     = try(aws_vpc.Kojitechs[0].id, "")
   create_vpc = var.create_vpc
-  azs        = data.aws_availability_zones.available.names
 }
 
 #  To access a resource id of a single instance like aws_vpc.Kojitechs.id
