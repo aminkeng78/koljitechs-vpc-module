@@ -20,7 +20,7 @@ variable "cidr_pubsubnet" {
   description = "list of public cidrs"
 }
 variable "pub_availability_zone" {
-  type        = string
+  type        = list
   description = "provide the availability zone for public subnet"
 }
 
@@ -29,7 +29,7 @@ variable "cidr_privsubnet" {
   description = "list of private cidrs"
 }
 variable "priv_availability_zone" {
-  type        = string
+  type        = list
   description = "provide the availability zone for priv subnet"
 }
 
@@ -39,7 +39,7 @@ variable "cidr_database" {
   description = "list of database cidrs"
 }
 variable "database_availability_zone" {
-  type        = string
+  type        = list(any)
   description = "Provide the availability zone for database subnet"
 }
 variable "enable_natgateway" {
