@@ -1,16 +1,10 @@
-# koljitechs-vpc-module
 
-## Usage
-
-## Description
-To use this module get the following block 
-
-## Module
-### NOTE
-This is for ssh : "git::git@https://github.com/aminkeng78/koljitechs-vpc-module.git"
+provider "aws" {
+    region = "us-east-1"
+    profile = "default"
+}
 
 
-```hcl
 module vpc {
     source = "git::https://github.com/aminkeng78/koljitechs-vpc-module.git"
 
@@ -25,5 +19,3 @@ module vpc {
     enable_natgateway = true
 
 }
-```
-
