@@ -1,5 +1,4 @@
 
-
 locals {
   vpc_id     = try(aws_vpc.Kojitechs[0].id, "")
   create_vpc = var.create_vpc
