@@ -53,3 +53,11 @@ variable "create_vpc" {
   default     = true
   description = "create vpc"
 }
+variable "instance_type" {
+  type = string
+  description = "provide the instance type"
+}
+variable "ami_id" {
+  type = string
+  description = "provide ami id"
+}
